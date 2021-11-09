@@ -1,0 +1,24 @@
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        max-width: 1730px;
+        padding: 52px 15px;
+        margin: 0 auto;
+    }
+}
+
+.logo {
+    max-height: 26px;
+    max-width: 140px;
+    display: block;
+    svg {
+        max-height: 26px;
+    }
+}
+
+.navigation {
+    &__menu {
+        display: flex;
+    }
+}

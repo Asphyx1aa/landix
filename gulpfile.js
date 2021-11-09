@@ -13,11 +13,11 @@ const ttf2woff2 = require('gulp-ttf2woff2');
 const del = require('del');
 
 const svgSprites = function() {
-    return src('./src/img/**.svg')
+    return src('./src/assets/img/*.svg')
       .pipe(svgSprite({
           mode: {
               stack: {
-                  sprite: '../img/sprite.svg'
+                  sprite: '../../img/sprite.svg'
               }
           }
       }))
@@ -26,9 +26,9 @@ const svgSprites = function() {
 }
 
 const fonts = function() {
-    return src('./assets/src/fonts/*.ttf')
+    return src('./src/assets/fonts/*.ttf')
       .pipe(ttf2woff())
-      .pipe(src('./assets/src/fonts/*.ttf'))
+      .pipe(src('./src/assets/fonts/*.ttf'))
       .pipe(ttf2woff2())
       .pipe(dest('./dist/fonts'))
 }
