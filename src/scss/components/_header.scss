@@ -1,0 +1,63 @@
+.intro-screen {
+    background-color: #f6f6f6;
+    background-image: url('../img/img/hero-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.header {
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1730px;
+        padding: 52px 15px;
+        margin: 0 auto;
+    }
+}
+
+.logo {
+    max-height: 26px;
+    max-width: 140px;
+    display: block;
+    svg {
+        max-height: 26px;
+    }
+}
+
+.navigation {
+    &__menu {
+        display: flex;
+        align-items: center;
+    }
+    &__item {
+        margin: 0 27px;
+        line-height: 1.5;
+        transition: hover .4s;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    &__search {
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.icon {
+    display: block;
+    max-height: 20px;
+    &:not(:last-child) {
+        margin-right: 32px;
+    }
+    svg {
+        max-height: 22px;
+        max-width: 22px;
+    }
+}
